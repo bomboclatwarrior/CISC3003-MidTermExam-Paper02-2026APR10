@@ -136,19 +136,21 @@ if ($selectedCustomer !== null) {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php foreach ($customerOrders as $order): ?>
-                                            <tr>
-                                                <td class="mdl-data-table__cell--non-numeric">
-                                                    <i class="material-icons">menu_book</i>
-                                                </td>
-                                                <td class="mdl-data-table__cell--non-numeric">
-                                                    <?= htmlspecialchars($order['isbn']) ?>
-                                                </td>
-                                                <td class="mdl-data-table__cell--non-numeric">
-                                                    <?= htmlspecialchars($order['title']) ?>
-                                                </td>
-                                            </tr>
-                                            <?php endforeach; ?>
+<?php foreach ($customerOrders as $order): ?>
+<tr>
+    <td class="mdl-data-table__cell--non-numeric">
+        <img src="images/tinysquare/<?= htmlspecialchars($order['isbn']) ?>.jpg" 
+             alt="Cover for <?= htmlspecialchars($order['title']) ?>"
+             style="width: 50px; height: auto;">
+    </td>
+    <td class="mdl-data-table__cell--non-numeric">
+        <?= htmlspecialchars($order['isbn']) ?>
+    </td>
+    <td class="mdl-data-table__cell--non-numeric">
+        <?= htmlspecialchars($order['title']) ?>
+    </td>
+</tr>
+<?php endforeach; ?>
                                         </tbody>
                                     </table>
                                 <?php else: ?>
