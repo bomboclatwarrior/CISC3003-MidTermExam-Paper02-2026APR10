@@ -1,5 +1,7 @@
 <?php
+
 include 'includes/book-utilities.inc.php';
+
 
 // Define data file paths (adjust if needed; place customers.txt and orders.txt in same folder as this script)
 $customersFile = 'data/customers.txt';
@@ -30,7 +32,7 @@ if ($selectedCustomer !== null) {
 <html lang="en">
 <head>
     <!-- Replace with your actual Student ID and Full Name -->
-    <title>CISC3003: 2025123456 Alex Johnson</title>
+    <title>DC328252 Diogo Barros</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -45,6 +47,8 @@ if ($selectedCustomer !== null) {
     <script src="js/jquery.sparkline.2.1.2.js"></script>
 </head>
 <body>
+
+
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
     <?php include 'includes/header.inc.php'; ?>
     <?php include 'includes/left-nav.inc.php'; ?>
@@ -161,7 +165,7 @@ if ($selectedCustomer !== null) {
 
         <!-- Footer with required text (must match exactly as required) -->
         <footer style="padding: 16px; text-align: center; background-color: #ececec; width: 100%;">
-            <p>CISC3003 Web Programming: 2025123456 Alex Johnson 2026</p>
+            <p>CISC3003 Web Programming: DC328252 Diogo Barros</p>
         </footer>
     </main>
 </div> <!-- / mdl-layout -->

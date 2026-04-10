@@ -50,7 +50,7 @@ function readOrders($customerId, $filename) {
     }
     $lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     foreach ($lines as $line) {
-        $fields = explode(';', trim($line));
+        $fields = explode(',', trim($line));  // Change delimiter to comma
         if (count($fields) >= 5) {
             if (trim($fields[1]) == $customerId) {
                 $orders[] = [
